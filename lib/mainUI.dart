@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:mojamalaaplikacija/variables.dart';
+import 'variables.dart';
 import 'getData.dart';
 
 DataGetter dataGetter = DataGetter();
-
-String fact = 'hej iz MainUI';
 
 class MainUI extends StatefulWidget {
   @override
@@ -16,66 +14,74 @@ class _MainUIState extends State<MainUI> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topRight,
-          end: Alignment.bottomLeft,
-          colors: [
-            Color(0xFF141E30),
-            Color(0xFF243B55),
-          ],
-        ),
-      ),
+      color: mainColor,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Column(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.all(32.0),
+                    padding: const EdgeInsets.all(24.0),
                     child: Image(
                       image: AssetImage('images/maca1.png'),
-                      width: 75.0,
+                      width: 60.0,
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(32.0),
+                    padding: const EdgeInsets.all(24.0),
                     child: Image(
                       image: AssetImage('images/maca2.png'),
-                      width: 75.0,
+                      width: 60.0,
                     ),
                   ),
                 ],
               ),
               Column(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
-                  Text(
-                    fact,
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      color: Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.all(36.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(16.0),
+                        ),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Text(
+                          fact,
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: mainColor,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
                     ),
                   ),
                   Center(
                     child: Container(
                       decoration: neumorphicShadow,
-                      child: RaisedButton(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(16.0),
-                        ),
-                        color: mainColor,
-                        padding: EdgeInsets.all(32.0),
-                        onPressed: () => dataGetter.getData(),
-                        child: Text(
-                          'BOTUN',
-                          style: TextStyle(
-                            fontSize: 20.0,
-                            color: Colors.white,
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 24.0),
+                        child: RaisedButton(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16.0),
+                          ),
+                          color: mainColor,
+                          padding: EdgeInsets.all(28.0),
+                          onPressed: () => dataGetter.getData(),
+                          child: Text(
+                            'CAT FACT',
+                            style: TextStyle(
+                              fontSize: 20.0,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                       ),
@@ -83,21 +89,21 @@ class _MainUIState extends State<MainUI> {
                   ),
                 ],
               ),
-              Column(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.all(32.0),
+                    padding: const EdgeInsets.all(24.0),
                     child: Image(
                       image: AssetImage('images/maca3.png'),
-                      width: 75.0,
+                      width: 60.0,
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(32.0),
+                    padding: const EdgeInsets.all(24.0),
                     child: Image(
                       image: AssetImage('images/maca4.png'),
-                      width: 75.0,
+                      width: 60.0,
                     ),
                   ),
                 ],

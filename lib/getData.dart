@@ -8,7 +8,7 @@ var data;
 var response;
 int i;
 int randomNumber;
-String fact = 'hej iz getData';
+String fact = 'Fact iz getData()';
 
 class DataGetter {
   Future<dynamic> getData() async {
