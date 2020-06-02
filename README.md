@@ -1,4 +1,4 @@
-# randomcatfact
+# Random Cat Fact
 
 ## A simple Flutter app that shows you a random cat fact!
 
