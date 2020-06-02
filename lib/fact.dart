@@ -11,7 +11,7 @@ class FactUI extends StatefulWidget {
 }
 
 class _FactUIState extends State<FactUI> {
-  void initState() async {
+  void initState() {
     dataGetter.getData();
     super.initState();
   }

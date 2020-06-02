@@ -14,6 +14,13 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.7.5
+
+flutter_icons:
+  android: true
+  image_path: 'images/maca3.png'
+  adaptive_icon_background: '#27786F'
+
 flutter:
   uses-material-design: true
   assets:
