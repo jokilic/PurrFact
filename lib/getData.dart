@@ -8,7 +8,7 @@ var data;
 var response;
 int i;
 int randomNumber;
-String fact = 'Fact iz getData()';
+String fact = 'Press the button for a Cat Fact...';
 
 class DataGetter {
   Future<dynamic> getData() async {
@@ -25,10 +25,10 @@ class DataGetter {
     for (i = 0; i < data.length; i++) {
       funFacts.add(data[i]['text']);
     }
-    randomFunFact(funFacts);
+    randomFunFact();
   }
 
-  String randomFunFact(funFacts) {
+  String randomFunFact() {
     randomNumber = Random().nextInt(funFacts.length);
     fact = funFacts[randomNumber];
     print(fact);
