@@ -4,7 +4,7 @@
 
 Facts are fetched from the [cat-facts API](https://github.com/alexwohlbruck/cat-facts)
 
-### App can be downloaded from [HERE](https://github.com/jokilic/random-cat-facts/raw/master/random_cat_fact.apk).
+### App can be downloaded from [HERE](https://github.com/jokilic/random-cat-facts/releases/download/1.0/random_cat_fact.apk).
 
 ![Screenshot of the app](https://raw.githubusercontent.com/jokilic/random-cat-facts/master/screenshot.png)
 
