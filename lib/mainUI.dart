@@ -8,14 +8,11 @@ import 'variables.dart';
 class MainUI extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-
     return Scaffold(
       backgroundColor: mainColor,
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Container(
-            height: size.height - 24.0,
+        child: Center(
+          child: SingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
