@@ -1,12 +1,12 @@
 ![Header](https://raw.githubusercontent.com/jokilic/random-cat-facts/master/screenshots/header-wide.png)
 
-# Random Cat Fact
+# PurrFact
 
 ## A simple Flutter app that shows you a random cat fact!
 
 Facts are fetched from the [cat-facts API](https://github.com/alexwohlbruck/cat-facts)
 
-### App can be downloaded from [HERE](https://github.com/jokilic/random-cat-facts/releases/download/1.0/random_cat_fact.apk).
+### App can be downloaded from [HERE](https://play.google.com/store/apps/details?id=com.josipkilic.randomcatfact).
 
 ![Teaser](https://raw.githubusercontent.com/jokilic/random-cat-facts/master/screenshots/teaser.png)
 
