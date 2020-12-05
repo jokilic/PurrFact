@@ -1,7 +1,7 @@
 name: purrfact
 description: A new Flutter application.
 
-version: 1.0.1+2
+version: 1.0.2+3
 
 environment:
   sdk: '>=2.8.0 <3.0.0'
